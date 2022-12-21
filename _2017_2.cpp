@@ -36,8 +36,6 @@ int main()
         int x, y, l, h;
         pixel color;
         duom >> x >> y >> l >> h >> color.R >> color.G >> color.B;
-        //x--;
-        //y--;
         draw(image, x, y, l, h, color);
         if (x_min > x) { x_min = x; }
         if (y_min > y) { y_min = y; }
@@ -54,7 +52,6 @@ int main()
             rez << image[i][j].R << ' ' << image[i][j].G << ' ' << image[i][j].B << '\n';
         }
     }
-
 
     duom.close();
     rez.close();
